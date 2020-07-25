@@ -1,0 +1,227 @@
+*{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  background-color: #E5CFB0;
+}
+
+header{
+  grid-area: "header";
+  background-color: #B95D1A;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 50px;
+}
+
+.header-list {
+  vertical-align: center;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.header-list li {
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 150px;
+  color: white;
+}
+
+li:hover {
+
+}
+
+header li a{
+  color:white;
+}
+
+footer{
+  grid-area: "footer";
+  background-color: #B95D1A;
+  height: 30px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  z-index: 10;
+}
+
+.footer-list {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.footer-list li {
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  display: inline-block;
+  width: 300px;
+  color: white;
+}
+
+footer li a{
+  color: white;
+}
+
+.container {
+  display: grid;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  margin: auto;
+  grid-template-areas: "header"
+    									 "content"
+    									 "footer";
+  grid-template-rows: 80px 1fr 100px;
+}
+
+.content {
+  background-color: #F3CC95;
+  grid-area: content;
+  text-align: center;
+  padding-bottom: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: -10px;
+}
+
+h1 {
+  color: #663300;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 22px;
+  font-weight: 100;
+  margin: 0 auto 20px auto;
+}
+
+#question_title{
+  text-align: center;
+  color: #663300;
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+td{
+  width: 210px;
+  height: 270px;
+  vertical-align: top;
+}
+
+#question_content{
+  text-align: left;
+  color: #663300;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 2;
+}
+
+.question_image{
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+.image_caption{
+  text-align: center;
+  word-wrap: normal;
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  color: #663300;
+}
+
+.input_hidden {}
+    position: absolute;
+    left: -9999px;
+{}
+
+.selected {
+    background-color: red;
+}
+
+#submit_button{
+  float: center;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 26;
+  text-align: center;
+  color: #663300;
+  border: 3px solid #663300;
+  background-color: white;
+  width: 150px;
+  margin-top: 5px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  border-radius: 12px;
+}
+
+#submit_button:hover {
+  color: white;
+  background-color: #663300;
+}
+
+.wine_result_header{
+  text-align: center;
+  color: #663300;
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.wine_result_body{
+  text-align: justify;
+  color: #663300;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 2;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.go_again_button{
+  float: center;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 26;
+  text-align: center;
+  color: #663300;
+  border: 3px solid #663300;
+  background-color: white;
+  width: 150px;
+  margin-top: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  border-radius: 12px;
+}
+
+.go_again_button:hover {
+  color: white;
+  background-color: #663300;
+}
